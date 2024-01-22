@@ -90,3 +90,12 @@ body{
     border-bottom:1px solid #888686;
 }
 
+.submit button {
+    width:28rem;
+    height:4rem;
+    background:#8D8CD4;
+    font-size: 1.2rem;
+    color:white;
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
