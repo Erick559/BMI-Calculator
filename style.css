@@ -35,3 +35,14 @@ body{
     font-size: 1.5rem;
     color: #D2D2D6;
 }
+
+.gender-age,
+.height-weight{
+    display:flex;
+    gap:10rem;
+}
+
+.gender-age div,
+.height-weight div{
+    width:6rem;
+}
