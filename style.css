@@ -46,3 +46,23 @@ body{
 .height-weight div{
     width:6rem;
 }
+
+.gender-age label,
+.height-weight label{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.gender-age input,
+.gender-age select{
+    font-size: 1.1rem;
+    width:11rem;
+    color:#888686
+}
+
+.height-weight input,
+.height-weight select{
+    font-size: 1.1rem;
+    width:6rem;
+    color:#888686
+}
