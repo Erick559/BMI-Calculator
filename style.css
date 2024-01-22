@@ -56,7 +56,7 @@ body{
 .gender-age input,
 .gender-age select{
     font-size: 1.1rem;
-    width:11rem;
+    width:12rem;
     color:#888686
 }
 
@@ -65,4 +65,10 @@ body{
     font-size: 1.1rem;
     width:6rem;
     color:#888686
+}
+
+.height-option div,
+.weight-option div{
+    display:flex;
+    gap:2rem;
 }
