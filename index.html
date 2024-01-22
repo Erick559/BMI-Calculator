@@ -17,32 +17,48 @@
 
         <div class="form">
             <form class="measurements">
-                <label for="gender">Gender</label>
-                <select name="gender" class="gender">
-                    <option value="Female">Female</option>
-                    <option value="Male">Male</option>
-                </select>
-
-                <label for="age">Age</label>
-                <input type="text" name="age" class="age">
-
-                <label for="height">Height</label>
-                <div class="height-option">
-                    <input type="text" name="height" class="height">
-                    <select name="height">
-                        <option value="inches">Inches</option>
-                        <option value="centimeters">Centimeters</option>
-                    </select>
+                <div class="gender-age">
+                    <div>
+                        <label for="gender">Gender</label>
+                        <select name="gender" class="gender">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="text" name="age" class="age">
+                    </div>
+                    
                 </div>
-
-                <label for="weight">Weight</label>
-                <div class="weight-options">
-                    <input type="text" name="weight" class="weight">
-                    <select name="weight" class="weight-select">
-                        <option value="kg">Kg</option>
-                        <option value="pounds">Lbs</option>
-                    </select>
+                
+                <div class="height-weight">
+                    <div class="height-option">
+                        <label for="height">Height</label>
+                        <div>
+                            <input type="text" name="height" class="height">
+                            <select name="height">
+                                <option value="inches">Inches</option>
+                                <option value="centimeters">Centimeters</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+    
+                    
+                    <div class="weight-options">
+                        <label for="weight">Weight</label>
+                        <div>
+                            <input type="text" name="weight" class="weight">
+                            <select name="weight" class="weight-select">
+                                <option value="kg">Kg</option>
+                                <option value="pounds">Lbs</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
+                
             </form>
         </div>
 
