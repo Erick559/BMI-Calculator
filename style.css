@@ -42,6 +42,10 @@ body{
     gap:10rem;
 }
 
+.gender-age{
+    margin-bottom: 5rem;
+}
+
 .gender-age div,
 .height-weight div{
     width:6rem;
