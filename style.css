@@ -14,3 +14,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.container{
+    height: 60rem;
+    width: 40rem;
+    border-radius: 2.5rem;
+    padding: 5rem;
+    background: #F5F5F5;
+}
