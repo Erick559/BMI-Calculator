@@ -55,20 +55,29 @@ body{
 
 .gender-age input,
 .gender-age select{
+    border: none;
+    outline:none;
     font-size: 1.1rem;
     width:12rem;
-    color:#888686
+    color:#888686;
+    background: #F5F5F5;
+    border-bottom: 1px solid #888686;
 }
 
 .height-weight input,
 .height-weight select{
     font-size: 1.1rem;
     width:6rem;
-    color:#888686
+    color:#888686;
+    border:none;
+    outline: none;
+    background: #F5F5F5;
 }
 
 .height-option div,
 .weight-option div{
     display:flex;
     gap:2rem;
+    width:12rem;
+    border-bottom:1px solid #888686;
 }
