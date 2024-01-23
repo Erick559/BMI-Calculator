@@ -16,4 +16,3 @@ For imperial measurements, BMI is calculated by dividing the weight in pounds by
   - Red for obese
 - The results displayed also have statements related to the weight category.
 
-In a way, it can resemble the `cdc.gov` one
