@@ -1,5 +1,5 @@
 # BMI-Calculator
-This is a BMI Calculator intended for adults aged 20+ that provides BMI and the corresponding BMI weight status category.
+This is a BMI Calculator intended for adults aged 18+ that provides BMI and the corresponding BMI weight status category.
 ## How it is calculated:
 The standard formula for calculating BMI is the weight in Kg divided by the height in meters squared
 
