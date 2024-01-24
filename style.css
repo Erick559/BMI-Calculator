@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
+* {
     font-family: 'Montserrat';
     box-sizing: border-box;
     font-size: 10px;
@@ -8,14 +7,14 @@
     padding: 0;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container{
+.container {
     height: 60rem;
     width: 40rem;
     border-radius: 2.5rem;
@@ -23,79 +22,79 @@ body{
     background: #F5F5F5;
 }
 
-.header{
-    height:25rem;
+.header {
+    height: 25rem;
 }
 
-.header h1{
+.header h1 {
     font-size: 3rem;
 }
 
-.header p{
+.header p {
     font-size: 1.5rem;
     color: #D2D2D6;
 }
 
-.measurements{
+.measurements {
     margin-bottom: 10rem;
 }
 
 .gender-age,
-.height-weight{
-    display:flex;
-    gap:10rem;
+.height-weight {
+    display: flex;
+    gap: 10rem;
 }
 
-.gender-age{
+.gender-age {
     margin-bottom: 5rem;
 }
 
 .gender-age div,
-.height-weight div{
-    width:6rem;
+.height-weight div {
+    width: 6rem;
 }
 
 .gender-age label,
-.height-weight label{
+.height-weight label {
     font-size: 1.2rem;
     font-weight: 600;
 }
 
 .gender-age input,
-.gender-age select{
+.gender-age select {
     border: none;
-    outline:none;
+    outline: none;
     font-size: 1.1rem;
-    width:12rem;
-    color:#888686;
+    width: 12rem;
+    color: #888686;
     background: #F5F5F5;
     border-bottom: 1px solid #888686;
 }
 
 .height-weight input,
-.height-weight select{
+.height-weight select {
     font-size: 1.1rem;
-    width:6rem;
-    color:#888686;
-    border:none;
+    width: 6rem;
+    color: #888686;
+    border: none;
     outline: none;
     background: #F5F5F5;
 }
 
 .height-option div,
-.weight-option div{
-    display:flex;
-    gap:2rem;
-    width:12rem;
-    border-bottom:1px solid #888686;
+.weight-option div {
+    display: flex;
+    gap: 2rem;
+    width: 12rem;
+    border-bottom: 1px solid #888686;
 }
 
 .submit button {
-    width:28rem;
-    height:4rem;
-    background:#8D8CD4;
+    width: 28rem;
+    height: 4rem;
+    background: #8D8CD4;
     font-size: 1.2rem;
-    color:white;
+    color: white;
     font-weight: 700;
     border-radius: 0.5rem;
 }
