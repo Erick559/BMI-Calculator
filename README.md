@@ -1,9 +1,7 @@
 # BMI-Calculator
-This is a BMI Calculator that provides BMI and the corresponding BMI weight status category.
+This is a BMI Calculator intended for adults aged 20+ that provides BMI and the corresponding BMI weight status category.
 ## How it is calculated:
-For metric measurements, BMI is calculated by dividing the weight in Kg by the height squared in meters.
-
-For imperial measurements, BMI is calculated by dividing the weight in pounds by the height squared in feet and inches multiplied by 703.
+The standard formula for calculating BMI is the weight in Kg divided by the height in meters squared
 
 ## Functions
 - Takes measurement inputs in both imperial and metric measurements.
