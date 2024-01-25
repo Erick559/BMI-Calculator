@@ -52,6 +52,25 @@ function calculateBMI(){
     return parseFloat(BMI).toFixed(2)
 }
 
+// This function returns the weight category according to the calculated BMI value
+
+function getWeightCategory(){
+    let calculatedBMI = calculateBMI()
+    let weightCategory;
+
+    if (calculatedBMI <18.5){
+        weightCategory = 'Underweight'
+    }
+    else if (calculatedBMI >= 18.5 && calculatedBMI<= 24.9){
+        weightCategory = 'Normal Weight'
+    }
+    else if (calculatedBMI >= 25 && calculatedBMI <= 29.9){
+        weightCategory = 'Overweight'
+    } 
+    else {
+        weightCategory = 'Obese'
+    }
+}
 
 calculateButton.addEventListener('click',() => {
     console.log(calculateBMI())
