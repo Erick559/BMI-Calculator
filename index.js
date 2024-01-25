@@ -8,6 +8,10 @@ const gender = document.querySelector('.gender')
 const heightUnit = document.querySelector('.height-unit')
 const weightUnit = document.querySelector('.weight-unit')
 
+const inputBoxes = document.querySelectorAll('input')
+const labels = document.querySelectorAll('label')
+const selectBoxes = document.querySelectorAll('select')
+
 const calculateButton = document.querySelector('.submit')
 
 // This function gets the value of the height unit and returns the converted unit which will be meters squared
@@ -79,23 +83,30 @@ function changeContainerColor(){
 
     switch (returnedWeightCategory){
         case 'Underweight':
-            container.style.background= '#87B1E3'
+            container.style.backgroundColor= '#87B1E3'
+            inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#87B1E3')
+            selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#87B1E3')
             break;
 
         case 'Normal Weight':
             container.style.backgroundColor = '#C1E898'
+            inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#C1E898')
+            selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#C1E898')
             break;
         
         case 'Overweight':
             container.style.backgroundColor = '#F9E488'
+            inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#F9E488')
+            selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#F9E488')
             break;
         
         case 'Obese':
             container.style.backgroundColor = '#F38B8B'
-        
-        default:
-            container.style.backgroundColor ='#F5F5F5'
+            inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#F38B8B')
+            selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#F38B8B')
     }
+
+    labels.forEach(label => label.style.color = 'white')
 }
 
 calculateButton.addEventListener('click',() => {
