@@ -47,8 +47,9 @@ function getWeightValue(){
 function calculateBMI(){
     let userHeight = getHeightValue()
     let userWeight = getWeightValue()
+    let BMI = userWeight/userHeight
 
-    return userWeight/userHeight
+    return parseFloat(BMI).toFixed(2)
 }
 
 
