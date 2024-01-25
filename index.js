@@ -113,6 +113,8 @@ function changeContainerColor(){
         }
     
         labels.forEach(label => label.style.color = 'white')
+        calculateButton.classList.add('calculate')
+        container.appendChild(calculateButton)
     }
 }
 
