@@ -39,7 +39,14 @@ function getWeightValue(){
     return parseFloat(weightInput)
 }
 
+function calculateBMI(){
+    let userHeight = getHeightValue()
+    let userWeight = getWeightValue()
+
+    return userWeight/userHeight
+}
+
+
 calculateButton.addEventListener('click',() => {
-    console.log(getWeightValue())
-    console.log(getHeightValue())
+    console.log(calculateBMI())
 })
