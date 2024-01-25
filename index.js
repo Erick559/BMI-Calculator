@@ -9,3 +9,8 @@ const heightUnit = document.querySelector('.height-unit')
 const weightUnit = document.querySelector('.weight-unit')
 
 const calculateButton = document.querySelector('.submit')
+
+// This function gets the values of the height and weight unit and returns the converted units which will be kg and meters
+function getValue(){
+
+}
