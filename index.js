@@ -70,8 +70,37 @@ function getWeightCategory(){
     else {
         weightCategory = 'Obese'
     }
+
+    return weightCategory
+}
+
+function changeContainerColor(){
+    let returnedWeightCategory = getWeightCategory()
+
+    switch (returnedWeightCategory){
+        case 'Underweight':
+            container.style.background= '#87B1E3'
+            break;
+
+        case 'Normal Weight':
+            container.style.backgroundColor = '#C1E898'
+            break;
+        
+        case 'Overweight':
+            container.style.backgroundColor = '#F9E488'
+            break;
+        
+        case 'Obese':
+            container.style.backgroundColor = '#F38B8B'
+        
+        default:
+            container.style.backgroundColor ='#F5F5F5'
+    }
 }
 
 calculateButton.addEventListener('click',() => {
     console.log(calculateBMI())
+    console.log(getWeightCategory())
+
+    changeContainerColor()
 })
