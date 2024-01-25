@@ -17,7 +17,7 @@ function getHeightValue(){
     let heightInput;
 
     if (selectedHeightUnit == 'inches'){
-        heightInput = height.value * 0.0254
+        heightInput = parseFloat(height.value * 0.0254).toFixed(2)
     }
     else{
         heightInput = height.value / 100;
