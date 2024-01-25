@@ -22,9 +22,24 @@ function getHeightValue(){
         heightInput = height.value / 100;
     }
 
-    return heightInput
+    return parseFloat(heightInput ** 2)
+}
+
+function getWeightValue(){
+    let selectedWeightUnit = weightUnit.value
+    let weightInput;
+
+    if (selectedWeightUnit == 'pounds'){
+        weightInput = (weight.value * 0.453592).toFixed(2)
+    }
+    else {
+        weightInput = weight.value
+    }
+
+    return parseFloat(weightInput)
 }
 
 calculateButton.addEventListener('click',() => {
+    console.log(getWeightValue())
     console.log(getHeightValue())
 })
