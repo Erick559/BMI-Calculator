@@ -12,7 +12,7 @@ const inputBoxes = document.querySelectorAll('input')
 const labels = document.querySelectorAll('label')
 const selectBoxes = document.querySelectorAll('select')
 
-const calculateButton = document.querySelector('.submit')
+const calculateButton = document.querySelector('button')
 
 // This function gets the value of the height unit and returns the converted unit which will be meters squared
 
@@ -71,7 +71,7 @@ function getWeightCategory(){
     else if (calculatedBMI >= 25 && calculatedBMI <= 29.9){
         weightCategory = 'Overweight'
     } 
-    else {
+    else if (calculatedBMI >= 30 ){
         weightCategory = 'Obese'
     }
 
@@ -81,37 +81,42 @@ function getWeightCategory(){
 function changeContainerColor(){
     let returnedWeightCategory = getWeightCategory()
 
-    switch (returnedWeightCategory){
-        case 'Underweight':
-            container.style.backgroundColor= '#87B1E3'
-            inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#87B1E3')
-            selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#87B1E3')
-            break;
-
-        case 'Normal Weight':
-            container.style.backgroundColor = '#C1E898'
-            inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#C1E898')
-            selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#C1E898')
-            break;
-        
-        case 'Overweight':
-            container.style.backgroundColor = '#F9E488'
-            inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#F9E488')
-            selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#F9E488')
-            break;
-        
-        case 'Obese':
-            container.style.backgroundColor = '#F38B8B'
-            inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#F38B8B')
-            selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#F38B8B')
+    if(returnedWeightCategory === undefined){
+        container.style.backgroundColor = '#F5F5F5'
+        inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#F5F5F5')
+        selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#F5F5F5')
     }
-
-    labels.forEach(label => label.style.color = 'white')
+    else{
+        switch (returnedWeightCategory){
+            case 'Underweight':
+                container.style.backgroundColor= '#87B1E3'
+                inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#87B1E3')
+                selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#87B1E3')
+                break;
+    
+            case 'Normal Weight':
+                container.style.backgroundColor = '#C1E898'
+                inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#C1E898')
+                selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#C1E898')
+                break;
+            
+            case 'Overweight':
+                container.style.backgroundColor = '#F9E488'
+                inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#F9E488')
+                selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#F9E488')
+                break;
+            
+            case 'Obese':
+                container.style.backgroundColor = '#F38B8B'
+                inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#F38B8B')
+                selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#F38B8B')
+        }
+    
+        labels.forEach(label => label.style.color = 'white')
+    }
 }
 
 calculateButton.addEventListener('click',() => {
-    console.log(calculateBMI())
     console.log(getWeightCategory())
-
     changeContainerColor()
 })
