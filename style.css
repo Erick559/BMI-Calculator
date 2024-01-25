@@ -98,3 +98,13 @@ body {
     font-weight: 700;
     border-radius: 0.5rem;
 }
+
+.calculate{
+    width: 28rem;
+    height: 4rem;
+    background: #F9F9F9;
+    font-size: 1.2rem;
+    color: #1b1a1a;
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
