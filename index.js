@@ -10,7 +10,8 @@ const weightUnit = document.querySelector('.weight-unit')
 
 const calculateButton = document.querySelector('.submit')
 
-// This function gets the values of the height and weight unit and returns the converted units which will be kg and meters
+// This function gets the value of the height unit and returns the converted unit which will be meters squared
+
 function getHeightValue(){
     let selectedHeightUnit = heightUnit.value
     let heightInput;
@@ -25,6 +26,8 @@ function getHeightValue(){
     return parseFloat(heightInput ** 2)
 }
 
+// This function gets the value of the weight unit and returns the converted unit which will be kg
+
 function getWeightValue(){
     let selectedWeightUnit = weightUnit.value
     let weightInput;
@@ -38,6 +41,8 @@ function getWeightValue(){
 
     return parseFloat(weightInput)
 }
+
+// This function takes the heightValue and weightValue from their respective functions and returns the BMI
 
 function calculateBMI(){
     let userHeight = getHeightValue()
