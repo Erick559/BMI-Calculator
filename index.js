@@ -15,7 +15,7 @@ const selectBoxes = document.querySelectorAll('select')
 const container = document.querySelector('.container')
 
 // Variables needed for appending the BMI results
-
+const header = document.querySelector('.header')
 const title = document.querySelector('.title')
 const mainSection = document.querySelector('.main-text')
 
@@ -125,9 +125,22 @@ function changeContainerColor(){
     }
 }
 
+function appendResults(){
+    let bmiResult = calculateBMI()
+  
+    if(bmiResult === 'NaN'){
+        mainSection.textContent = 'FILL IN DETAILS CORRECTLY'
+        mainSection.style.color= 'red'
+    }
+    else{
+        title.textContent = 'YOUR RESULT'
+        mainSection.textContent = bmiResult
+    }
+}
 
 
 calculateButton.addEventListener('click',() => {
-    console.log(getWeightCategory())
+    console.log(calculateBMI())
     changeContainerColor()
+    appendResults()
 })
