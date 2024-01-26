@@ -140,6 +140,9 @@ function appendResults(){
     else{
         title.textContent = 'YOUR RESULT'
         mainSection.textContent = bmiResult
+
+        mainSection.style.fontSize = '60px'
+        title.style.color = 'black'
     }
 }
 
