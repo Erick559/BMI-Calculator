@@ -1,6 +1,5 @@
-const container = document.querySelector('.container')
-
 // Variables needed for calculating the BMI
+
 const height = document.querySelector('.height')
 const weight = document.querySelector('.weight')
 const age = document.querySelector('.age')
@@ -8,9 +7,13 @@ const gender = document.querySelector('.gender')
 const heightUnit = document.querySelector('.height-unit')
 const weightUnit = document.querySelector('.weight-unit')
 
+//Variables needed for the background color change
+
 const inputBoxes = document.querySelectorAll('input')
 const labels = document.querySelectorAll('label')
 const selectBoxes = document.querySelectorAll('select')
+const container = document.querySelector('.container')
+
 
 const calculateButton = document.querySelector('button')
 
@@ -117,6 +120,8 @@ function changeContainerColor(){
         container.appendChild(calculateButton)
     }
 }
+
+
 
 calculateButton.addEventListener('click',() => {
     console.log(getWeightCategory())
