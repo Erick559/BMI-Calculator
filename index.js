@@ -15,6 +15,7 @@ const selectBoxes = document.querySelectorAll('select')
 const container = document.querySelector('.container')
 
 // Variables needed for appending the BMI results
+
 const header = document.querySelector('.header')
 const title = document.querySelector('.title')
 const mainSection = document.querySelector('.main-text')
@@ -85,6 +86,8 @@ function getWeightCategory(){
     return weightCategory
 }
 
+// This function changes the container's color according to the returned BMI weight category
+
 function changeContainerColor(){
     let returnedWeightCategory = getWeightCategory()
 
@@ -124,6 +127,8 @@ function changeContainerColor(){
         container.appendChild(calculateButton)
     }
 }
+
+// This function appends the calculated BMI results to the header container
 
 function appendResults(){
     let bmiResult = calculateBMI()
