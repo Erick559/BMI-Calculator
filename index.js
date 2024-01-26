@@ -14,6 +14,10 @@ const labels = document.querySelectorAll('label')
 const selectBoxes = document.querySelectorAll('select')
 const container = document.querySelector('.container')
 
+// Variables needed for appending the BMI results
+
+const title = document.querySelector('.title')
+const mainSection = document.querySelector('.main-text')
 
 const calculateButton = document.querySelector('button')
 
