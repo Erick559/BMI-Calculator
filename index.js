@@ -141,8 +141,11 @@ function appendResults(){
         title.textContent = 'YOUR RESULT'
         mainSection.textContent = bmiResult
 
-        mainSection.style.fontSize = '60px'
-        title.style.color = 'black'
+        mainSection.style.fontSize = '50px'
+        mainSection.style.color = 'white'
+        
+        title.style.color = 'white'
+        title.style.fontWeight = '700'
     }
 }
 
