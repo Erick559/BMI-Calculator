@@ -172,8 +172,22 @@ function getRandomComment(weightCategory) {
     return comments[weightCategory] ? comments[weightCategory][Math.floor(Math.random() * comments[weightCategory].length)].toUpperCase() : "";
 }
 
+function appendIcon(){
+    let bmiResult = calculateBMI()
+
+    if (bmiResult === NaN){
+
+    } 
+    else{
+        let icon = document.createElement('i')
+        icon.classList.add('fa-solid', 'fa-question', 'fa-xl')
+        iconContainer.appendChild(icon)
+    }
+}
+
 
 calculateButton.addEventListener('click',() => {
     changeContainerColor()
     appendResults()
+    appendIcon()
 })
