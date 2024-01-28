@@ -124,6 +124,7 @@ body {
     border-radius: 5rem;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .icon-container i{
