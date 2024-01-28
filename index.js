@@ -172,7 +172,6 @@ function getRandomComment(weightCategory) {
 
 
 calculateButton.addEventListener('click',() => {
-    console.log(getRandomComment(getWeightCategory()));
     changeContainerColor()
     appendResults()
 })
