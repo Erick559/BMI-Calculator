@@ -166,7 +166,7 @@ function getRandomComment(weightCategory) {
       "Obese": ["It's important to address obesity for long-term health.", "Consult with a healthcare professional for personalized advice."],
     };
   
-    return comments[weightCategory] ? comments[weightCategory][Math.floor(Math.random() * comments[weightCategory].length)] : "";
+    return comments[weightCategory] ? comments[weightCategory][Math.floor(Math.random() * comments[weightCategory].length)].toUpperCase() : "";
   }
 
 
