@@ -184,6 +184,7 @@ function appendIcon(){
 
         } 
         else{
+            iconContainer.classList.add('show')
             let icon = document.createElement('i')
             icon.classList.add('fa-solid', 'fa-question', 'fa-xl')
             iconContainer.appendChild(icon)
