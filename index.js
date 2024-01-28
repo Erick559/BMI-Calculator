@@ -145,6 +145,7 @@ function appendResults(){
 
         mainSection.style.fontSize = '60px'
         mainSection.style.color = 'white'
+        mainSection.style.marginBottom = '20px'
 
         title.style.color = 'white'
         title.style.fontWeight = '700'
