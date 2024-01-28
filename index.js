@@ -143,7 +143,7 @@ function appendResults(){
         title.textContent = 'YOUR RESULT'
         mainSection.textContent = bmiResult
 
-        mainSection.style.fontSize = '50px'
+        mainSection.style.fontSize = '60px'
         mainSection.style.color = 'white'
 
         title.style.color = 'white'
@@ -151,6 +151,7 @@ function appendResults(){
 
         commentsSection.textContent = comments
         commentsSection.style.color = 'white'
+
         header.appendChild(commentsSection)
     }
 }
