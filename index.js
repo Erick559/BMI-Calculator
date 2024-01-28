@@ -151,6 +151,8 @@ function appendResults(){
 
         commentsSection.textContent = comments
         commentsSection.style.color = 'white'
+        commentsSection.style.fontWeight = '700'
+        commentsSection.style.fontSize = '15px'
 
         header.appendChild(commentsSection)
     }
