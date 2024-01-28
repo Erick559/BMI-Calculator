@@ -19,6 +19,7 @@ const container = document.querySelector('.container')
 const header = document.querySelector('.header')
 const title = document.querySelector('.title')
 const mainSection = document.querySelector('.main-text')
+const commentsSection = document.createElement('p')
 
 const calculateButton = document.querySelector('button')
 
@@ -147,6 +148,10 @@ function appendResults(){
 
         title.style.color = 'white'
         title.style.fontWeight = '700'
+
+        commentsSection.textContent = comments
+        commentsSection.style.color = 'white'
+        header.appendChild(commentsSection)
     }
 }
 
