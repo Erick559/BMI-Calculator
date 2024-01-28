@@ -108,3 +108,24 @@ body {
     font-weight: 700;
     border-radius: 0.5rem;
 }
+
+.result-window{
+    position: relative;
+}
+
+.icon-container{
+    position:absolute;
+    display: flex;
+    top:0%;
+    right:35%;
+    width:2.5rem;
+    height:2.5rem;
+    border:2px solid white;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container i{
+    color:white;
+}
