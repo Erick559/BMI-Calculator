@@ -20,6 +20,8 @@ const header = document.querySelector('.header')
 const title = document.querySelector('.title')
 const mainSection = document.querySelector('.main-text')
 const commentsSection = document.createElement('p')
+const resultWindow = document.querySelector('.result-window')
+const iconContainer = document.querySelector('.icon-container')
 
 const calculateButton = document.querySelector('button')
 
@@ -168,7 +170,7 @@ function getRandomComment(weightCategory) {
     };
   
     return comments[weightCategory] ? comments[weightCategory][Math.floor(Math.random() * comments[weightCategory].length)].toUpperCase() : "";
-  }
+}
 
 
 calculateButton.addEventListener('click',() => {
