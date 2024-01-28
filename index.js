@@ -174,16 +174,21 @@ function getRandomComment(weightCategory) {
 
 function appendIcon(){
     let bmiResult = calculateBMI()
+    let existingIcon = document.querySelector('i')
 
-    if (bmiResult === NaN){
+    if(!existingIcon){
+        if (bmiResult === NaN){
 
-    } 
-    else{
-        let icon = document.createElement('i')
-        icon.classList.add('fa-solid', 'fa-question', 'fa-xl')
-        iconContainer.appendChild(icon)
+        } 
+        else{
+            let icon = document.createElement('i')
+            icon.classList.add('fa-solid', 'fa-question', 'fa-xl')
+            iconContainer.appendChild(icon)
+        }  
     }
 }
+
+
 
 
 calculateButton.addEventListener('click',() => {
