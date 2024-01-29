@@ -12,7 +12,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
 }
 
 .container {
@@ -192,3 +191,12 @@ body {
     font-weight: 400;
 }
 
+.overlay{
+    position:fixed;
+    opacity:0;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    background: rgba(225, 240, 218, .5);
+}
