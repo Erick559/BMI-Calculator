@@ -25,6 +25,11 @@ const commentsSection = document.createElement('p')
 const resultWindow = document.querySelector('.result-window')
 const iconContainer = document.querySelector('.icon-container')
 const moreInfoIcon = document.querySelector('i')
+const popUpWindow = document.querySelector('.popup-window')
+const displayedImage = document.querySelector('image')
+const closeButton = document.querySelector('.close')
+const weightHeader = document.querySelector('.bmi-category')
+const bmiInformation = document.querySelector('bmi-information')
 
 const calculateButton = document.querySelector('button')
 
@@ -191,9 +196,6 @@ function appendIcon(){
         }  
     }
 }
-
-
-
 
 calculateButton.addEventListener('click',() => {
     changeContainerColor()
