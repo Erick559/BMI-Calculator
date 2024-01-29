@@ -203,28 +203,28 @@ function appendInformation(){
 
     switch (category) {
         case 'Underweight':
-            displayedImage.src='BMI Images/underweight.jpeg'
+            displayedImage.src='BMI Images/Waluigi.png'
             displayedImage.alt='Weight Category'
             weightHeader.textContent = category
             bmiInformation.textContent = 'Those falling below a BMI of 18.5 are considered underweight, signifying insufficient body weight relative to height and potential health risks such as nutritional deficiencies.'
             break;
         
         case 'Normal Weight':
-            displayedImage.src='BMI Images/normalweight.jpeg'
+            displayedImage.src='BMI Images/Luigi.webp'
             displayedImage.alt = 'Weight Category'
             weightHeader.textContent = category
             bmiInformation.textContent = 'The normal weight range, with a BMI between 18.5 and 24.9, is generally regarded as a healthy zone associated with a lower risk of various health conditions.'
             break;
         
         case 'Overweight':
-            displayedImage.src='BMI Images/overweight.jpeg'
+            displayedImage.src='BMI Images/wario.webp'
             displayedImage.alt= 'Weight Category'
             weightHeader.textContent = category
             bmiInformation.textContent = 'A BMI between 25 and 29.9 indicates overweight status, reflecting excess body weight relative to height and an increased risk of health issues like heart disease, type 2 diabetes, and hypertension.'
             break;
         
         case 'Obese':
-            displayedImage.src='BMI Images/obese.jpeg'
+            displayedImage.src='BMI Images/bowser.png'
             displayedImage.alt= 'Weight Category'
             weightHeader.textContent = category
             bmiInformation.textContent = 'Obesity, identified with a BMI of 30 or higher, is further categorized into three classes based on severity.Class I, or moderate obesity (BMI 30-34.9), signifies the initial stage of obesity. Class II, or severe obesity (BMI 35-39.9), represents a higher level of excess weight. Class III, or very severe/morbid obesity (BMI 40 or higher), is associated with a significantly elevated risk of serious health conditions, including cardiovascular disease, diabetes, and certain cancers.'
