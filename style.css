@@ -135,7 +135,8 @@ body {
     position:fixed;
     top:50%;
     left:50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(0);
+    transition:200ms ease-in-out;
     width:70rem;
     height:50rem;
     z-index: 10;
@@ -143,6 +144,10 @@ body {
     border-radius: 2rem;
     display: flex;
     background: white;
+}
+
+.popup-window.active{
+    transform: translate(-50%,-50%) scale(1);
 }
 
 .image-section{
@@ -196,9 +201,16 @@ body {
 .overlay{
     position:fixed;
     opacity:0;
+    transition:200ms ease-in-out;
     top:0;
     right:0;
     left:0;
     bottom: 0;
     background: rgba(250,239,155, 0.5);
+    pointer-events: none;
+}
+
+.overlay.active{
+    opacity: 1;
+    pointer-events: all;
 }
