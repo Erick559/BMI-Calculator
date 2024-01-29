@@ -238,6 +238,10 @@ iconContainer.addEventListener('click', ()=>{
     appendInformation()
 })
 
+closeButton.addEventListener('click', ()=>{
+    popUpWindow.classList.remove('active')
+    overlay.classList.remove('active')})
+
 calculateButton.addEventListener('click',() => {
     changeContainerColor()
     appendResults()
