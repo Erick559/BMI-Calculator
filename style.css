@@ -138,9 +138,11 @@ body {
     transform: translate(-50%,-50%);
     width:70rem;
     height:50rem;
+    z-index: 10;
     border: 1px solid white;
     border-radius: 2rem;
     display: flex;
+    background: white;
 }
 
 .image-section{
@@ -198,5 +200,5 @@ body {
     right:0;
     left:0;
     bottom: 0;
-    background: rgba(225, 240, 218, .5);
+    background: rgba(250,239,155, 0.5);
 }
