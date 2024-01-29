@@ -203,7 +203,7 @@ function appendInformation(){
     let category = getWeightCategory()
 
     switch (category) {
-        case 'Under Weight':
+        case 'Underweight':
             displayedImage.src='BMI Images/underweight.jpeg'
             weightHeader.textContent = category
             bmiInformation.textContent = 'Those falling below a BMI of 18.5 are considered underweight, signifying insufficient body weight relative to height and potential health risks such as nutritional deficiencies.'
