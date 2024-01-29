@@ -24,7 +24,6 @@ const commentsSection = document.createElement('p')
 // Variables needed for more information pop up
 const resultWindow = document.querySelector('.result-window')
 const iconContainer = document.querySelector('.icon-container')
-const moreInfoIcon = document.querySelector('i')
 const popUpWindow = document.querySelector('.popup-window')
 const displayedImage = document.querySelector('img')
 const closeButton = document.querySelector('.close')
@@ -231,6 +230,13 @@ function appendInformation(){
             bmiInformation.textContent = 'Obesity, identified with a BMI of 30 or higher, is further categorized into three classes based on severity.Class I, or moderate obesity (BMI 30-34.9), signifies the initial stage of obesity. Class II, or severe obesity (BMI 35-39.9), represents a higher level of excess weight. Class III, or very severe/morbid obesity (BMI 40 or higher), is associated with a significantly elevated risk of serious health conditions, including cardiovascular disease, diabetes, and certain cancers.'
     }
 }
+
+iconContainer.addEventListener('click', ()=>{
+    popUpWindow.classList.add('active')
+    overlay.classList.add('active')
+
+    appendInformation()
+})
 
 calculateButton.addEventListener('click',() => {
     changeContainerColor()
