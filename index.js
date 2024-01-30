@@ -106,6 +106,7 @@ function changeContainerColor(){
         container.style.backgroundColor = '#F5F5F5'
         inputBoxes.forEach(inputBox => inputBox.style.backgroundColor ='#F5F5F5')
         selectBoxes.forEach(selectBox => selectBox.style.backgroundColor='#F5F5F5')
+        labels.forEach(label => label.style.color = 'black')
     }
     else{
         switch (returnedWeightCategory){
