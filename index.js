@@ -224,7 +224,7 @@ function appendInformation(){
             break;
         
         case 'Overweight':
-            displayedImage.src='BMI Images/wario.webp'
+            displayedImage.src='BMI Images/Wario.webp'
             displayedImage.alt= 'Weight Category'
             weightHeader.textContent = category
             bmiInformation.textContent = 'A BMI between 25 and 29.9 indicates overweight status, reflecting excess body weight relative to height and an increased risk of health issues like heart disease, type 2 diabetes, and hypertension.'
