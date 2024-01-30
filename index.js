@@ -189,20 +189,17 @@ function appendIcon(){
 
     if (bmiResult !== 'NaN'){
         if(!existingIcon){
-            if (bmiResult === NaN){
-                iconContainer.innerHTML = 'x'
-            } 
-            else{
-                iconContainer.classList.add('show')
-                let icon = document.createElement('i')
-                icon.setAttribute('id','moreinfo-icon')
-                icon.classList.add('fa-solid', 'fa-question', 'fa-xl')
-                iconContainer.appendChild(icon)
-            } 
+            iconContainer.classList.add('show')
+            let icon = document.createElement('i')
+            icon.setAttribute('id','moreinfo-icon')
+            icon.classList.add('fa-solid', 'fa-question', 'fa-xl')
+            iconContainer.appendChild(icon)
         }
     }
     else {
         iconContainer.classList.remove('show')
+        existingIcon.removeAttribute('id')
+        existingIcon.classList.remove('fa-solid', 'fa-question', 'fa-xl')
     }
 }
 
