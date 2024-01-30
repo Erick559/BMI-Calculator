@@ -148,6 +148,7 @@ function appendResults(){
     if(bmiResult === 'NaN'){
         mainSection.textContent = 'FILL IN DETAILS CORRECTLY'
         mainSection.style.color= 'red'
+        mainSection.style.fontSize= '40px'
     }
     else{
         title.textContent = 'YOUR RESULT'
@@ -184,17 +185,22 @@ function appendIcon(){
     let bmiResult = calculateBMI()
     let existingIcon = document.querySelector('#moreinfo-icon')
 
-    if(!existingIcon){
-        if (bmiResult === NaN){
-            iconContainer.innerHTML = 'x'
-        } 
-        else{
-            iconContainer.classList.add('show')
-            let icon = document.createElement('i')
-            icon.setAttribute('id','moreinfo-icon')
-            icon.classList.add('fa-solid', 'fa-question', 'fa-xl')
-            iconContainer.appendChild(icon)
-        } 
+    if (bmiResult !== 'NaN'){
+        if(!existingIcon){
+            if (bmiResult === NaN){
+                iconContainer.innerHTML = 'x'
+            } 
+            else{
+                iconContainer.classList.add('show')
+                let icon = document.createElement('i')
+                icon.setAttribute('id','moreinfo-icon')
+                icon.classList.add('fa-solid', 'fa-question', 'fa-xl')
+                iconContainer.appendChild(icon)
+            } 
+        }
+    }
+    else {
+        iconContainer.classList.remove('show')
     }
 }
 
