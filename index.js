@@ -147,6 +147,8 @@ function appendResults(){
     let comments = getRandomComment(getWeightCategory())
   
     if(bmiResult === 'NaN'){
+        title.textContent = 'BodyBalance'
+        title.style.color = '#D2D2D6'
         mainSection.textContent = 'FILL IN DETAILS CORRECTLY'
         mainSection.style.color= 'red'
         mainSection.style.fontSize= '40px'
