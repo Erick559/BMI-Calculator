@@ -150,6 +150,7 @@ function appendResults(){
         mainSection.textContent = 'FILL IN DETAILS CORRECTLY'
         mainSection.style.color= 'red'
         mainSection.style.fontSize= '40px'
+        commentsSection.textContent = ''
     }
     else{
         title.textContent = 'YOUR RESULT'
